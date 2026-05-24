@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Sobat Tani - Terintegrasi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="desktop-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fa-solid fa-seedling"></i> Sobat Jagung
+            </div>
+            <div class="nav-links">
+                <a href="#" class="nav-btn active" data-target="halaman-beranda">Beranda</a>
+                <a href="#" class="nav-btn" data-target="halaman-konsultasi">Konsultasi</a>
+                <a href="#" class="nav-btn" data-target="halaman-toko">Toko</a>
+                <a href="#" class="nav-btn" data-target="halaman-edukasi">Edukasi</a>
+                <a href="#" class="nav-btn" data-target="halaman-akun">Akun</a>
+                <div class="cart-icon-wrapper ml-4" style="display: inline-block;">
+                    <i class="fa-solid fa-cart-shopping text-xl text-gray-700"></i>
+                    <span class="cart-badge">0</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="app-container">
+        
+        <div id="halaman-beranda" class="halaman aktif">
+            <header class="header-section">
+                <div class="header-content">
+                    
+                    <div class="header-text-wrapper">
+                        <img src="mas.jpeg" alt="Maskot Sobat Jagung" class="img-maskot">
+                        <div class="header-text">
+                            <h1>Halo, Ibu Hastuti Handayani 👋</h1>
+                            <p>Selamat datang kembali di Website Sobat Jangung</p>
+                        </div>
+                    </div>
+
+                    <div class="consultation-card">
+                        <h2>Apa yang bisa kami bantu hari ini?</h2>
+                        <button class="nav-btn" data-target="halaman-konsultasi">Mulai Konsultasi</button>
+                    </div>
+                </div>
+            </header>
+
+            <div class="quick-menus">
+                <div class="quick-menu-item nav-btn" data-target="halaman-konsultasi">
+                    <div class="icon-wrapper bg-red"><i class="fa-solid fa-bug"></i></div>
+                    <span>Deteksi Hama</span>
+                </div>
+                <div class="quick-menu-item nav-btn" data-target="halaman-edukasi">
+                    <div class="icon-wrapper bg-green"><i class="fa-solid fa-leaf"></i></div>
+                    <span>Rekomendasi</span>
+                </div>
+                <div class="quick-menu-item nav-btn" data-target="halaman-toko">
+                    <div class="icon-wrapper bg-blue"><i class="fa-solid fa-store"></i></div>
+                    <span>Toko Partner</span>
+                </div>
+            </div>
+
+            <div class="main-content-wrapper">
+                <div class="promo-section">
+                    <div class="promo-card">
+                        <div class="promo-header">
+                            <div class="promo-text">
+                                <h3>Promo Spesial Hari Ini</h3>
+                                <p>Hemat hingga 20% untuk produk pilihan</p>
+                            </div>
+                            <div class="promo-badge">Disc. up to<br>20%</div>
+                        </div>
+                        <div class="promo-images">
+                            <div class="img-box" style="background-image: url('g1.jpeg');"></div>
+                            <div class="img-box" style="background-image: url('b3.jpeg');"></div>
+                            <div class="img-box" style="background-image: url('g5.jpeg');"></div>
+                            <div class="img-box" style="background-image: url('b1.jpeg');"></div>
+                            <div class="img-box" style="background-image: url('g8.jpeg');"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="keunggulan-section mt-4 mb-4">
+                    <h3 class="section-title">Keunggulan Belanja di Sobat Jagung</h3>
+                    <div class="keunggulan-scroll">
+                        
+                        <div class="keunggulan-card">
+                            <div class="keunggulan-icon bg-light-blue"><i class="fa-solid fa-truck-fast"></i></div>
+                            <h4>Pengiriman Super Cepat</h4>
+                            <p>Pesanan diproses instan & dikirim kurir prioritas. Tiba di lokasi Anda dalam hitungan jam untuk wilayah dalam kota.</p>
+                        </div>
+                        
+                        <div class="keunggulan-card">
+                            <div class="keunggulan-icon bg-yellow"><i class="fa-solid fa-thumbs-up"></i></div>
+                            <h4>Kualitas Jaminan Terbaik</h4>
+                            <p>Semua produk (benih, pupuk, alat) 100% Original dari brand ternama dan telah melewati kontrol kualitas ketat leh Sobat Tani.</p>
+                        </div>
+                        
+                        <div class="keunggulan-card">
+                            <div class="keunggulan-icon bg-green"><i class="fa-solid fa-shield-halved"></i></div>
+                            <h4>Transaksi Aman & Nyaman</h4>
+                            <p>Proses pembayaran dilindungi sistem keamanan enkripsi terbaru. Data pribadi Anda dijamin kerahasiaannya bersama kami.</p>
+                        </div>
+                        
+                        <div class="keunggulan-card">
+                            <div class="keunggulan-icon bg-red"><i class="fa-solid fa-tags"></i></div>
+                            <h4>Harga Termurah & Jujur</h4>
+                            <p>Dapatkan harga grosir langsung dari distributor resmi. Tanpa biaya tersembunyi, pas di kantong para petani Indonesia.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+   
+
+
+                <div class="main-menu-section">
+                    <h3>Menu Utama</h3>
+                    <div class="main-menu-grid">
+                        <div class="main-menu-item nav-btn" data-target="halaman-beranda">
+                            <div class="icon-wrapper bg-green"><i class="fa-solid fa-house"></i></div>
+                            <span>Beranda</span>
+                        </div>
+                        <div class="main-menu-item nav-btn" data-target="halaman-konsultasi">
+                            <div class="icon-wrapper bg-dark-green"><i class="fa-solid fa-comment-dots"></i></div>
+                            <span>Konsultasi</span>
+                        </div>
+                        <div class="main-menu-item nav-btn" data-target="halaman-toko">
+                            <div class="icon-wrapper bg-yellow"><i class="fa-solid fa-store"></i></div>
+                            <span>Toko</span>
+                        </div>
+                        <div class="main-menu-item nav-btn" data-target="halaman-edukasi">
+                            <div class="icon-wrapper bg-light-blue"><i class="fa-solid fa-book-open"></i></div>
+                            <span>Edukasi</span>
+                        </div>
+                        <div class="main-menu-item nav-btn" data-target="halaman-akun">
+                            <div class="icon-wrapper bg-teal"><i class="fa-regular fa-user"></i></div>
+                            <span>Akun</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="halaman-konsultasi" class="halaman">
+            <div class="header-top-page">
+                <h2>Pilih Konsultan</h2>
+            </div>
+            <div class="main-content-wrapper mt-min">
+                <div class="search-container">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Cari konsultan atau spesialisasi...">
+                </div>
+                
+                <h3 class="section-title mt-4">Konsultan Tersedia</h3>
+                <div class="konsultan-grid">
+                    <div class="konsultan-card">
+                        <div class="konsultan-info">
+                            <div class="avatar bg-gray-200">👩‍🦰</div>
+                            <div class="details">
+                                <div class="name-row"><h4>Khairani Husna</h4><span class="badge online">Online</span></div>
+                                <p class="spesialis">Mitra Sobat Jagung</p>
+                                <div class="rating-row"><i class="fa-solid fa-star text-yellow"></i> 4.9 <span class="text-gray">(127)</span></div>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/6283116174546" target="_blank" class="btn-primary" style="display: block; text-align: center; text-decoration: none;">
+    Hubungi via WhatsApp
+</a>
+                    </div>
+                    <div class="konsultan-card">
+                        <div class="konsultan-info">
+                            <div class="avatar bg-gray-200">🧕🏽</div>
+                            <div class="details">
+                                <div class="name-row"><h4>Rizka Zahira</h4><span class="badge online">Online</span></div>
+                                <p class="spesialis">Spesialis Pupuk & Nutrisi</p>
+                                <div class="rating-row"><i class="fa-solid fa-star text-yellow"></i> 4.9 <span class="text-gray">(98)</span></div>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/6285177376181" target="_blank" class="btn-primary" style="display: block; text-align: center; text-decoration: none;">
+    Hubungi via WhatsApp
+</a>
+                    </div>
+                    <div class="konsultan-card">
+                        <div class="konsultan-info">
+                            <div class="avatar bg-gray-200">👩🏻</div>
+                            <div class="details">
+                                <div class="name-row"><h4>Iin Julian Br Rajagukguk</h4><span class="badge online">Online</span></div>
+                                <p class="spesialis">Ahli Tanaman Jagung</p>
+                                <div class="rating-row"><i class="fa-solid fa-star text-yellow"></i> 4.9 <span class="text-gray">(156)</span></div>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/6285761189566" target="_blank" class="btn-primary" style="display: block; text-align: center; text-decoration: none;">
+    Hubungi via WhatsApp
+</a>
+                    </div>
+                    <div class="konsultan-card opacity-70">
+                        <div class="konsultan-info">
+                            <div class="avatar bg-gray-200">💁‍♀️</div>
+                            <div class="details">
+                                <div class="name-row"><h4>Saskia Stevani</h4><span class="badge offline">Offline</span></div>
+                                <p class="spesialis">Spesialis Irigasi & Tanah</p>
+                                <div class="rating-row"><i class="fa-solid fa-star text-yellow"></i> 4.7 <span class="text-gray">(72)</span></div>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/6283876964795" target="_blank" class="btn-primary" style="display: block; text-align: center; text-decoration: none;">
+    Hubungi via WhatsApp
+</a>
+                    </div>
+                </div>
+
+                <h3 class="section-title mt-4">Penilaian Layanan</h3>
+                <div class="rating-summary-card mb-4">
+                    <div class="rating-header-center">
+                        <div class="rating-score">
+                            <span class="score-big" id="angka-rating-rata">4.9</span>
+                            <span class="score-max">/ 5.0</span>
+                        </div>
+                        <div class="rating-stars-large" id="bintang-rating-rata">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <p class="text-xs text-gray mt-1" id="teks-total-ulasan">Berdasarkan 500 sesi</p>
+                    </div>
+                    
+                    <div class="rating-bars-container mt-3 border-top pt-3">
+                        <div class="rating-bar-row"><span class="star-label">5 <i class="fa-solid fa-star"></i></span><div class="bar-track"><div class="bar-fill" id="bar-5" style="width: 90%;"></div></div><span class="percent-label" id="persen-5">90%</span></div>
+                        <div class="rating-bar-row"><span class="star-label">4 <i class="fa-solid fa-star"></i></span><div class="bar-track"><div class="bar-fill" id="bar-4" style="width: 8%;"></div></div><span class="percent-label" id="persen-4">8%</span></div>
+                        <div class="rating-bar-row"><span class="star-label">3 <i class="fa-solid fa-star"></i></span><div class="bar-track"><div class="bar-fill" id="bar-3" style="width: 2%;"></div></div><span class="percent-label" id="persen-3">2%</span></div>
+                        <div class="rating-bar-row"><span class="star-label">2 <i class="fa-solid fa-star"></i></span><div class="bar-track"><div class="bar-fill" id="bar-2" style="width: 0%;"></div></div><span class="percent-label" id="persen-2">0%</span></div>
+                        <div class="rating-bar-row"><span class="star-label">1 <i class="fa-solid fa-star"></i></span><div class="bar-track"><div class="bar-fill" id="bar-1" style="width: 0%;"></div></div><span class="percent-label" id="persen-1">0%</span></div>
+                    </div>
+                    
+                    <button id="btn-buka-ulasan" class="btn-primary mt-4 w-100" style="padding: 10px; font-size: 14px;">Tulis Ulasan Anda</button>
+                </div>
+
+                <h3 class="section-title mt-4">Apa Kata Petani?</h3>
+                <div id="wadah-testimoni" class="testimonial-container mt-3 mb-5">
+                    <div class="testimoni-card">
+                        <div class="testimoni-header">
+                            <div class="testimoni-user">
+                                <div class="user-avatar bg-gray-200">👨‍🚀</div>
+                                <div><h4>Dimaz Pake z</h4><p>2 hari yang lalu</p></div>
+                            </div>
+                            <div class="testimoni-rating text-yellow">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="testimoni-text mt-2">Semua konsultannya sangat ramah, sangat-sangat rekomenndasi!</p>
+                    </div>
+                </div>
+
+                <div id="wadah-testimoni" class="testimonial-container mt-3 mb-5">
+                    <div class="testimoni-card">
+                        <div class="testimoni-header">
+                            <div class="testimoni-user">
+                                <div class="user-avatar bg-gray-200">🧕</div>
+                                <div><h4>Hafsyah</h4><p>10 hari yang lalu</p></div>
+                            </div>
+                            <div class="testimoni-rating text-yellow">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="testimoni-text mt-2">Responnya sangat bagus, cepat, peka. Jadi takut nyaman hehe!</p>
+                    </div>
+                </div>
+
+                <div id="wadah-testimoni" class="testimonial-container mt-3 mb-5">
+                    <div class="testimoni-card">
+                        <div class="testimoni-header">
+                            <div class="testimoni-user">
+                                <div class="user-avatar bg-gray-200">👩‍🏫</div>
+                                <div><h4>Anak Bagelen</h4><p>11 hari yang lalu</p></div>
+                            </div>
+                            <div class="testimoni-rating text-yellow">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="testimoni-text mt-2">Sudah beberapa kali konsultasi disini dan hasil sangat memuaskan!</p>
+                    </div>
+                </div>
+
+                <div id="wadah-testimoni" class="testimonial-container mt-3 mb-5">
+                    <div class="testimoni-card">
+                        <div class="testimoni-header">
+                            <div class="testimoni-user">
+                                <div class="user-avatar bg-gray-200">🥷</div>
+                                <div><h4>Imam Anak Mama</h4><p>14 hari yang lalu</p></div>
+                            </div>
+                            <div class="testimoni-rating text-yellow">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="testimoni-text mt-2">Gak nyangka responnya secepat ini, kalah respon doi dibuatnya!</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="halaman-toko" class="halaman">
+            <div class="header-top-page flex-between">
+                <h2>Toko</h2>
+                <div class="cart-icon-wrapper">
+                    <i class="fa-solid fa-cart-shopping text-white text-xl"></i>
+                    <span class="cart-badge">0</span>
+                </div>
+            </div>
+
+            <div class="main-content-wrapper mt-min">
+                <div class="search-container mb-3">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Cari produk, toko, atau kategori...">
+                </div>
+
+                <div class="promo-ongkir">
+                    <div class="ongkir-icon"><i class="fa-solid fa-truck-fast"></i></div>
+                    <div class="ongkir-text">
+                        <h4>Gratis Ongkir</h4>
+                        <p>Min. belanja Rp 100.000</p>
+                    </div>
+                </div>
+
+                <h3 class="section-title mt-4">Kategori</h3>
+                <div class="kategori-scroll">
+                    <div class="kategori-pill active" data-filter="semua">Semua</div>
+                    <div class="kategori-pill" data-filter="pupuk">Pupuk</div>
+                    <div class="kategori-pill" data-filter="benih">Benih</div>
+                </div>
+
+                <h3 class="section-title mt-4">Produk</h3>
+                <div class="produk-grid" id="produk-container">
+                    <div class="produk-card" data-category="pupuk"><div class="produk-img" style="background-image: url('g1.jpeg');"></div><div class="produk-info"><h4 class="produk-judul">ORGANIK TANI - Pupuk Nutrisi Cair</h4><div class="produk-rating"><i class="fa-solid fa-star text-yellow"></i> 4.8</div><div class="harga-row mt-auto"><span class="harga-aktif">Rp 65.000</span><button class="btn-add-cart" data-name="ORGANIK TANI - Pupuk Nutrisi Cair" data-price="65000" ><i class="fa-solid fa-plus"></i></button></div></div></div>
+                    <div class="produk-card" data-category="pupuk"><div class="produk-img" style="background-image: url('g2.jpeg');"></div><div class="produk-info"><h4 class="produk-judul">MITRA TANI - Pupuk Cair Super Nutrisi</h4><div class="produk-rating"><i class="fa-solid fa-star text-yellow"></i> 4.9</div><div class="harga-row mt-auto"><span class="harga-aktif">Rp 35.000</span><button class="btn-add-cart" data-name="MITRA TANI - Pupuk Cair Super Nutrisi" data-price="35000" ><i class="fa-solid fa-plus"></i></button></div></div></div>
+                    <div class="produk-card" data-category="pupuk"><div class="diskon-badge">-10%</div><div class="produk-img" style="background-image: url('g3.jpeg');"></div><div class="produk-info"><h4 class="produk-judul">GADING TANI - Pupuk Nutrisi Cair Maxi</h4><div class="produk-rating"><i class="fa-solid fa-star text-yellow"></i> 4.7</div><div class="harga-coret">Rp 68.000</div><div class="harga-row"><span class="harga-aktif">Rp 61.200</span><button class="btn-add-cart" data-name="GADING TANI - Pupuk Nutrisi Cair Maxi" data-price="61200"><i class="fa-solid fa-plus"></i></button></div></div></div>
+                    <div class="produk-card" data-category="pupuk"><div class="produk-img" style="background-image: url('g4.jpeg');"></div><div class="produk-info"><h4 class="produk-judul">MEGA PANEN - Pupuk Cair Organik</h4><div class="produk-rating"><i class="fa-solid fa-star text-yellow"></i> 4.8</div><div class="harga-row mt-auto"><span class="harga-aktif">Rp 45.000</span><button class="btn-add-cart" data-name="MEGA PANEN - Pupuk Cair Organik" data-price="45000" ><i class="fa-solid fa-plus"></i></button></div></div></div>
+                    <div class="produk-card" data-category="pupuk"><div class="produk-img" style="background-image: url('g5.jpeg');"></div><div class="produk-info"><h4 class="produk-judul">GADING TANI - Pupuk Cair Super Nutrisi</h4><div class="produk-rating"><i class="fa-solid fa-star text-yellow"></i> 4.5</div><div class="harga-row mt-auto"><span class="harga-aktif">Rp 28.000</span><button class="btn-add-cart" data-name="GADING TANI - Pupuk Cair Super Nutrisi" data-price="28000" ><i class="fa-solid fa-plus"></i></button></div></div></div>
+                    <div class="produk-card" data-category="pupuk"><div class="produk-img" style="background-image: url('g6.jpeg');"></div><div class="produk-info"><h4 class="produk-judul">BUMI JAYA - Pupuk Nutrisi Maksimal</h4><div class="produk-rating"><i class="fa-solid fa-star text-yellow"></i> 4.9</div><div class="harga-row mt-auto"><span class="harga-aktif">Rp 58.000</span><button class="btn-add-cart" data-name="BUMI JAYA - Pupuk Nutrisi Maksimal" data-price="58000" ><i class="fa-solid fa-plus"></i></button></div></div></div>
+                    <div class="produk-card" data-category="pupuk"><div class="produk-img" style="background-image: url('g7.jpeg');"></div><div class="produk-info"><h4 class="produk-judul">GADING TANI - Pupuk Nutrisi Maximal</h4><div class="produk-rating"><i class="fa-solid fa-star text-yellow"></i> 4.8</div><div class="harga-row mt-auto"><span class="harga-aktif">Rp 70.000</span><button class="btn-add-cart" data-name="GADING TANI - Pupuk Nutrisi Maximal" data-price="70000" ><i class="fa-solid fa-plus"></i></button></div></div></div>
+                    <div class="produk-card" data-category="pupuk"><div class="produk-img" style="background-image: url('g8.jpeg');"></div><div class="produk-info"><h4 class="produk-judul">MITRA TANI - Pupuk Booster Unggul</h4><div class="produk-rating"><i class="fa-solid fa-star text-yellow"></i> 4.9</div><div class="harga-row mt-auto"><span class="harga-aktif">Rp 68.000</span><button class="btn-add-cart" data-name="MITRA TANI - Pupuk Booster Unggul" data-price="68000" ><i class="fa-solid fa-plus"></i></button></div></div></div>
+
+                    <div class="produk-card" data-category="benih"><div class="diskon-badge">-11%</div><div class="produk-img" style="background-image: url('b1.jpeg');"></div><div class="produk-info"><h4 class="produk-judul">Benih Berkualitas Cabai Merah Unggul</h4><div class="produk-rating"><i class="fa-solid fa-star text-yellow"></i> 4.7</div><div class="harga-coret">Rp 140.000</div><div class="harga-row"><span class="harga-aktif">Rp 125.000</span><button class="btn-add-cart" data-name="Benih Berkualitas Cabai Merah Unggul" data-price="125000"><i class="fa-solid fa-plus"></i></button></div></div></div>
+                    <div class="produk-card" data-category="benih"><div class="produk-img" style="background-image: url('b2.jpeg');"></div><div class="produk-info"><h4 class="produk-judul">TANI MAKMUR - Benih Cabai Unggul</h4><div class="produk-rating"><i class="fa-solid fa-star text-yellow"></i> 4.6</div><div class="harga-row mt-auto"><span class="harga-aktif">Rp 85.000</span><button class="btn-add-cart" data-name="TANI MAKMUR - Benih Cabai Unggul" data-price="85000" ><i class="fa-solid fa-plus"></i></button></div></div></div>
+                    <div class="produk-card" data-category="benih"><div class="produk-img" style="background-image: url('b3.jpeg');"></div><div class="produk-info"><h4 class="produk-judul">TANI MAKMUR - Benih Jagung Unggul</h4><div class="produk-rating"><i class="fa-solid fa-star text-yellow"></i> 4.8</div><div class="harga-row mt-auto"><span class="harga-aktif">Rp 15.000</span><button class="btn-add-cart" data-name="TANI MAKMUR - Benih Jagung Unggul" data-price="15000"><i class="fa-solid fa-plus"></i></button></div></div></div>
+                    <div class="produk-card" data-category="benih"><div class="produk-img" style="background-image: url('b4.jpeg');"></div><div class="produk-info"><h4 class="produk-judul">GRIYA JAGUNG - Benih Jagung manis Premium</h4><div class="produk-rating"><i class="fa-solid fa-star text-yellow"></i> 4.7</div><div class="harga-row mt-auto"><span class="harga-aktif">Rp 22.000</span><button class="btn-add-cart" data-name="GRIYA JAGUNG - Benih Jagung manis Premium" data-price="22000"><i class="fa-solid fa-plus"></i></button></div></div></div>
+                    <div class="produk-card" data-category="benih"><div class="produk-img" style="background-image: url('b5.jpeg');"></div><div class="produk-info"><h4 class="produk-judul">GRIYA TOMAT - Benih Tomat Cherry Premium</h4><div class="produk-rating"><i class="fa-solid fa-star text-yellow"></i> 4.9</div><div class="harga-row mt-auto"><span class="harga-aktif">Rp 38.000</span><button class="btn-add-cart" data-name="GRIYA TOMAT - Benih Tomat Cherry Premium" data-price="38000" ><i class="fa-solid fa-plus"></i></button></div></div></div>
+                </div>
+
+                <h3 class="section-title mt-4">Toko Partner Terdekat</h3>
+<div class="toko-list mb-3">
+    <a href="https://maps.app.goo.gl/JqKNa8f8RCYRRasc9?g_st=ac" target="_blank" class="toko-card" style="text-decoration: none; color: inherit;">
+        <div class="toko-info-left">
+            <div class="toko-title-row"><h4>UD. Garuda Mas</h4><span class="badge buka">Buka</span></div>
+            <div class="toko-rating-row"><i class="fa-solid fa-star text-yellow"></i> 4.9 <span class="text-gray">(234)</span></div>
+            <div class="toko-jarak"><i class="fa-solid fa-location-dot"></i> 1.2 km</div>
+        </div>
+        <i class="fa-solid fa-chevron-right text-gray text-xl"></i>
+    </a>
+
+    <a href="https://maps.app.goo.gl/hRX3vB1kbphgmSvF7?g_st=ac" target="_blank" class="toko-card" style="text-decoration: none; color: inherit;">
+        <div class="toko-info-left">
+            <div class="toko-title-row"><h4>UD. Solo Jaya</h4><span class="badge buka">Buka</span></div>
+            <div class="toko-rating-row"><i class="fa-solid fa-star text-yellow"></i> 4.5 <span class="text-gray">(189)</span></div>
+            <div class="toko-jarak"><i class="fa-solid fa-location-dot"></i> 3 km</div>
+        </div>
+        <i class="fa-solid fa-chevron-right text-gray text-xl"></i>
+    </a>
+
+    <a href="https://maps.app.goo.gl/d4rQq8W2j7N4Ayad8?g_st=ac" target="_blank" class="toko-card" style="text-decoration: none; color: inherit;">
+        <div class="toko-info-left">
+            <div class="toko-title-row"><h4>UD ABC PUPUK</h4><span class="badge buka">Buka</span></div>
+            <div class="toko-rating-row"><i class="fa-solid fa-star text-yellow"></i> 4.8 <span class="text-gray">(189)</span></div>
+            <div class="toko-jarak"><i class="fa-solid fa-location-dot"></i> 3.1 km</div>
+        </div>
+        <i class="fa-solid fa-chevron-right text-gray text-xl"></i>
+    </a>
+
+    <a href="https://maps.app.goo.gl/FSEsA6YMZ2vvu5D89?g_st=ac" target="_blank" class="toko-card" style="text-decoration: none; color: inherit;">
+        <div class="toko-info-left">
+            <div class="toko-title-row"><h4>UD Usaha Tani</h4><span class="badge buka">Buka</span></div>
+            <div class="toko-rating-row"><i class="fa-solid fa-star text-yellow"></i> 4.8 <span class="text-gray">(189)</span></div>
+            <div class="toko-jarak"><i class="fa-solid fa-location-dot"></i> 2.1 km</div>
+        </div>
+        <i class="fa-solid fa-chevron-right text-gray text-xl"></i>
+    </a>
+</div>
+
+            </div>
+        </div>
+
+        <div id="halaman-edukasi" class="halaman">
+            <div class="header-top-page pb-6">
+                <h2>Edukasi</h2>
+            </div>
+
+            <div class="main-content-wrapper mt-min bg-white shadow-top rounded-top-3xl">
+                <div class="article-hero-img" style="background-image: url('sdd.jpg');"></div>
+                
+                <h3 class="section-title mt-4 mb-3">Kumpulan Artikel & Solusi</h3>
+                
+                <div class="edukasi-accordion">
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h4>🌽 Dasar-Dasar Budidaya Jagung</h4>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="accordion-body">
+                            <div class="article-meta mb-3">
+                                <span class="badge bg-green">Mengenali Jagung Sangat Penting.</span>
+                                <span class="text-gray text-xs ml-2"><i class="fa-regular fa-clock"></i> 5 mnt baca</span>
+                            </div>
+                            <h5>1. Jenis-Jenis Jagung</h5>
+                            <ul>
+                                <li>Jagung Hibrida - Jagung hasil persilangan unggul dengan produktivitas tinggi.</li>
+                                <li>Jagung Manis - Biasa dikonsumsi langsung sebagai makanan.</li>
+                                <li>Jagung Lokal - Varietas tradisional yang ditanam turun-temurun.</li>
+                                <li>Jagung Pakan - Digunakan untuk kebutuhan pakan ternak.</li>
+                            </ul>
+                      
+                            <h5 class="mt-3">2. Syarat Tumbuh Jagung</h5>
+                            <ul>
+                                <li>Ketinggian Tempat, Idealnya di ketinggian 0-1.500 mdpl dan yang paling optimal adalah 100-600 mdpl</li>
+                                <li>Curah Hujan, Idealnya 85-200 mm/bulan karna jagung membutuhkan cukup banyak air saat pertumbuhan awal</li>
+                                <li>Intensitas Cahaya, Jagung membutuhkan sinar matahari penuh sekitar 8-10 jam per hari</li>
+                                <li>Suhu Udara, suhu ideal nnya berada di angka 21-30 derajat, Jika terlalu dingin atau terlalu panas, pertumbuhan bisa terganggu.</li>
+                            </ul>
+
+                            <h5 class="mt-3">3. Siklus Pertumbuhan Jagung</h5>
+                            <ul>
+                                <li>Fase Perkecambahan (0-7 Hari)</li>
+                                <li>Fase Vegetatif (7-40 Hari)</li>
+                                <li>Fase Pembungaan (40-60 Hari)</li>
+                                <li>Fase Pengisian Biji (60-90 Hari)</li>
+                                <li>Fase Panen (90-120 Hari)</li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h4>🌽 Pandua Penanaman</h4>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="accordion-body">
+                            <div class="article-meta mb-3">
+                                <span class="badge bg-red">Menanan Jagung Tidak Bisa Sembarangan</span>
+                                <span class="text-gray text-xs ml-2"><i class="fa-regular fa-clock"></i> 3 mnt baca</span>
+                            </div>
+                            <h5>Pengolahan Lahan</h5>
+                            <ul>
+                                <li>Bersihkan lahan dari rumput, gulma, dan sisa tanaman sebelumnya.</li>
+                                <li>Cangkul atau bajak tanah agar menjadi gembur dan subur.</li>
+                                <li>Buat bedengan atau saluran drainase agar air tidak menggenang.</li>
+                            </ul>
+                            
+                            <h5 class="mt-3">Pemilihan Benih</h5>
+                            <ul>
+                                <li>Pilih benih jagung unggul yang bersertifikat dan berkualitas baik.</li>
+                                <li>Gunakan benih yang tahan terhadap hama dan penyakit.</li>
+                                <li>Pastikan benih memiliki daya tumbuh tinggi dan ukuran seragam.</li>
+                            </ul>
+
+                            <h5 class="mt-3">Cara Semai</h5>
+                            <ul>
+                                <li>Buat lubang tanam sedalam sekitar 3-5 cm.</li>
+                                <li>Masukkan 1-2 benih ke setiap lubang tanam.</li>
+                                <li>Tutup lubang dengan tanah tipis lalu siram secukupnya.</li>
+                            </ul>
+
+                            <h5 class="mt-3">Jarak Tanam</h5>
+                            <ul>
+                                <li>Gunakan jarak tanam sekitar 70 x 20 cm untuk pertumbuhan optimal.</li>
+                                <li>Atur jarak agar tanaman mendapat sinar matahari merata.</li>
+                                <li>Hindari penanaman terlalu rapat agar nutrisi tidak berebut.</li>
+                            </ul>
+
+                            <h5 class="mt-3">Pemupukan Dasar</h5>
+                            <ul>
+                                <li>Berikan pupuk kandang untuk meningkatkan kesuburan tanah.</li>
+                                <li>Tambahkan pupuk NPK sesuai kebutuhan tanaman.</li>
+                                <li>Lakukan pemupukan sebelum atau saat penanaman dilakukan.</li>
+                            </ul>
+
+                            <h5 class="mt-3">Penyiraman</h5>
+                            <ul>
+                                <li>Siram tanaman secara rutin pada pagi atau sore hari.</li>
+                                <li>Pastikan tanah tetap lembab terutama saat awal pertumbuhan.</li>
+                                <li>Kurangi penyiraman saat musim hujan agar akar tidak membusuk.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h4>🌽 Hama & Penyakit Jagung</h4>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="accordion-body">
+                            <div class="article-meta mb-3">
+                                <span class="badge bg-red">Kenali Hama dan Penyakitnya</span>
+                                <span class="text-gray text-xs ml-2"><i class="fa-regular fa-clock"></i> 3 mnt baca</span>
+                            </div>
+                            <h5 class="mt-3">Ulat Grayak</h5>
+                            <ul>
+                                <li>Menyerang daun jagung hingga berlubang dan rusak parah.</li>
+                                <li>Aktif menyerang pada malam hari dan berkembang sangat cepat.</li>
+                                <li>Dapat menurunkan pertumbuhan serta hasil panen tanaman.</li>
+                            </ul>
+                            <p>Solusi:</p>
+                            <p>Lakukan pengecekan rutin pada tanaman dan bersihkan ulat secara manual jika jumlahnya sedikit. Gunakan pestisida sesuai dosis anjuran apabila serangan sudah parah.</p>
+                            
+                            <h5 class="mt-3">Karat Daun</h5>
+                            <ul>
+                                <li>Ditandai munculnya bercak coklat atau jingga pada daun jagung.</li>
+                                <li>Penyakit ini disebabkan oleh jamur yang berkembang saat kelembaban tinggi.</li>
+                                <li>Daun yang terserang berat akan mengering dan menghambat fotosintesis.</li>
+                            </ul>
+                            <p>Solusi:</p>
+                            <p>Gunakan varietas jagung tahan penyakit dan jaga jarak tanam agar sirkulasi udara baik. Semprot fungisida jika infeksi mulai menyebar luas.</p>
+
+                            <h5 class="mt-3">Busuk Batang</h5>
+                            <ul>
+                                <li>Batang jagung menjadi lunak, membusuk, dan mudah roboh.</li>
+                                <li>Penyakit biasanya muncul akibat drainase buruk dan kelembaban tinggi.</li>
+                                <li>Serangan berat dapat menyebabkan gagal panen.</li>
+                            </ul>
+                            <p>Solusi:</p>
+                            <p>Perbaiki sistem drainase lahan dan hindari genangan air di sekitar tanaman. Cabut serta musnahkan tanaman yang sudah terserang parah agar tidak menular.</p>
+
+                            <h5 class="mt-3">Tikus</h5>
+                            <ul>
+                                <li>Tikus memakan biji, batang muda, dan tongkol jagung.</li>
+                                <li>Serangan sering terjadi pada malam hari dan sulit terdeteksi.</li>
+                                <li>Populasi tikus yang tinggi dapat merusak area tanam secara luas.</li>
+                            </ul>
+                            <p>Solusi:</p>
+                            <p>Bersihkan lingkungan sekitar lahan dan tutup lubang persembunyian tikus. Gunakan perangkap atau pengendalian alami seperti memelihara predator tikus.</p>
+                            
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="flex-between mt-4 mb-3 border-top pt-4">
+                    <h3 class="section-title mb-0">Rekomendasi Produk</h3>
+                    <a href="#" class="text-green-700 text-sm font-bold nav-btn" data-target="halaman-toko">Lihat semua <i class="fa-solid fa-chevron-right text-xs"></i></a>
+                </div>
+
+                <div class="produk-grid" style="grid-template-columns: repeat(3, 1fr);">
+                    <div class="produk-card">
+                        <div class="diskon-badge">-11%</div>
+                        <div class="produk-img" style="background-image: url('g4.jpeg');"></div>
+                        <div class="produk-info">
+                            <h4 class="produk-judul">MEGA PANEN - Pupuk Cair Organik</h4>
+                            <div class="harga-row mt-auto">
+                                <span class="harga-aktif">Rp 125k</span>
+                                <button class="btn-add-cart" data-name="Benih Jagung Hibrida" data-price="125000" data-img="https://images.unsplash.com/photo-1589923188900-85dae523342b?w=150"><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produk-card">
+                        <div class="produk-img" style="background-image: url('g7.jpeg');"></div>
+                        <div class="produk-info">
+                            <h4 class="produk-judul">GADING TANI - Pupuk Nutrisi Maksimal</h4>
+                            <div class="harga-row mt-auto">
+                                <span class="harga-aktif">Rp 68k</span>
+                                <button class="btn-add-cart" data-name="Nutrisi Jagung Superior" data-price="68000" data-img="https://images.unsplash.com/photo-1516253593875-bd7ba052fbc5?w=150"><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produk-card">
+                        <div class="produk-img" style="background-image: url('b3.jpeg');"></div>    
+                        <div class="produk-info">
+                            <h4 class="produk-judul">TANI MAKMUR - Benih Jagung Unggul</h4>
+                            <div class="harga-row mt-auto">
+                                <span class="harga-aktif">Rp 61k</span>
+                                <button class="btn-add-cart" data-name="Mitra Tani Cair" data-price="61200" data-img="https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=150"><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="btn-primary mt-4 nav-btn" data-target="halaman-toko">Lihat Semua Produk di Toko</button>
+
+            </div>
+        </div>
+
+        <div id="halaman-akun" class="halaman">
+            <div class="header-top-page" style="padding-bottom: 70px;">
+                <h2>Profil Saya</h2>
+            </div>
+            
+            <div class="main-content-wrapper mt-min">
+                <div class="akun-profile-card">
+                    <div class="avatar bg-gray-200">🧖‍♀️</div>
+                    <div class="akun-info">
+                        <h3>Ibu Hastuti Handayani</h3>
+                        <p>+62 812-3456-7890</p>
+                        <span class="badge bg-yellow mt-2 block w-fit">Petani Premium</span>
+                    </div>
+                    <div class="akun-edit"><i class="fa-solid fa-pen"></i></div>
+                </div>
+
+                <div class="akun-stats-grid">
+                    <div class="stat-box">
+                        <i class="fa-solid fa-wallet text-green-700"></i>
+                        <p class="stat-label">Saldo</p>
+                        <p class="stat-value">Rp 125rb</p>
+                    </div>
+                    <div class="stat-box">
+                        <i class="fa-solid fa-star text-yellow"></i>
+                        <p class="stat-label">Poin Sobat Jagung</p>
+                        <p class="stat-value">450</p>
+                    </div>
+                    <div class="stat-box">
+                        <i class="fa-solid fa-ticket text-red"></i>
+                        <p class="stat-label">Kupon</p>
+                        <p class="stat-value">3 Aktif</p>
+                    </div>
+                </div>
+
+                <h3 class="section-title mt-4">Aktivitas Saya</h3>
+                <div class="akun-menu-list">
+                    <div class="akun-menu-item">
+                        <div class="menu-icon bg-light-blue"><i class="fa-solid fa-box text-white"></i></div>
+                        <div class="menu-text">Pesanan Saya</div>
+                        <i class="fa-solid fa-chevron-right text-gray"></i>
+                    </div>
+                    <div class="akun-menu-item">
+                        <div class="menu-icon bg-dark-green"><i class="fa-solid fa-comment-dots text-white"></i></div>
+                        <div class="menu-text">Riwayat Konsultasi</div>
+                        <i class="fa-solid fa-chevron-right text-gray"></i>
+                    </div>
+                    <div class="akun-menu-item">
+                        <div class="menu-icon bg-teal"><i class="fa-solid fa-map-location-dot text-white"></i></div>
+                        <div class="menu-text">Lahan & Tanaman Saya</div>
+                        <i class="fa-solid fa-chevron-right text-gray"></i>
+                    </div>
+                    <div class="akun-menu-item" style="border-bottom: none;">
+                        <div class="menu-icon bg-red"><i class="fa-solid fa-heart text-white"></i></div>
+                        <div class="menu-text">Toko & Produk Favorit</div>
+                        <i class="fa-solid fa-chevron-right text-gray"></i>
+                    </div>
+                </div>
+
+                <h3 class="section-title mt-4">Pengaturan</h3>
+                <div class="akun-menu-list mb-4">
+                    <div class="akun-menu-item">
+                        <div class="menu-icon bg-gray-200"><i class="fa-solid fa-gear text-gray-700"></i></div>
+                        <div class="menu-text">Pengaturan Akun</div>
+                        <i class="fa-solid fa-chevron-right text-gray"></i>
+                    </div>
+                    <div class="akun-menu-item">
+                        <div class="menu-icon bg-gray-200"><i class="fa-solid fa-circle-question text-gray-700"></i></div>
+                        <div class="menu-text">Pusat Bantuan</div>
+                        <i class="fa-solid fa-chevron-right text-gray"></i>
+                    </div>
+                    <div class="akun-menu-item" style="border-bottom: none;">
+                        <div class="menu-icon bg-gray-200"><i class="fa-solid fa-shield-halved text-gray-700"></i></div>
+                        <div class="menu-text">Syarat & Ketentuan</div>
+                        <i class="fa-solid fa-chevron-right text-gray"></i>
+                    </div>
+                </div>
+
+                <button class="btn-logout">Keluar Akun</button>
+            </div>
+        </div>
+
+        <nav class="bottom-nav">
+            <a href="#" class="nav-item nav-btn active" data-target="halaman-beranda"><i class="fa-solid fa-house"></i><span>Beranda</span></a>
+            <a href="#" class="nav-item nav-btn" data-target="halaman-konsultasi"><i class="fa-solid fa-comment-dots"></i><span>Konsultasi</span></a>
+            <a href="#" class="nav-item nav-btn" data-target="halaman-toko"><i class="fa-solid fa-store"></i><span>Toko</span></a>
+            <a href="#" class="nav-item nav-btn" data-target="halaman-edukasi"><i class="fa-solid fa-book-open"></i><span>Edukasi</span></a>
+            <a href="#" class="nav-item nav-btn" data-target="halaman-akun"><i class="fa-regular fa-user"></i><span>Akun</span></a>
+        </nav>
+
+        <div id="modal-keranjang" class="modal-overlay">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Keranjang Belanja</h3>
+                    <button id="btn-close-cart"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                <div id="cart-items-container" class="cart-items">
+                    <p class="empty-cart-text">Keranjang masih kosong</p>
+                </div>
+                <div class="modal-footer">
+                    <div class="flex-between mb-3">
+                        <span class="text-gray-700 font-bold">Total Belanja:</span>
+                        <span id="cart-total" class="harga-aktif text-xl">Rp 0</span>
+                    </div>
+                    <button class="btn-primary" style="padding: 16px; font-size: 16px;">Checkout Sekarang</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal-logout" class="modal-overlay">
+            <div class="modal-content modal-center">
+                <div class="logout-icon"><i class="fa-solid fa-circle-exclamation"></i></div>
+                <h3>Keluar Akun?</h3>
+                <p>Anda harus masuk kembali untuk menggunakan fitur aplikasi ini.</p>
+                <div class="modal-actions">
+                    <button id="btn-batal-logout" class="btn-primary btn-outline">Batal</button>
+                    <button id="btn-konfirm-logout" class="btn-primary btn-danger">Keluar</button>
+                </div>
+            </div>
+        </div>
+
+<div id="modal-checkout" class="modal-overlay">
+            <div class="modal-content" style="height: 90vh;">
+                <div class="modal-header">
+                    <h3>Pembayaran</h3>
+                    <button id="btn-close-checkout"><i class="fa-solid fa-arrow-left"></i></button>
+                </div>
+                
+                <div class="checkout-body" style="flex-grow: 1; overflow-y: auto; padding-right: 4px;">
+                    
+                    <div class="checkout-section">
+                        <h4><i class="fa-solid fa-location-dot text-red"></i> Alamat Pengiriman</h4>
+                        <div class="alamat-form mt-2">
+                            <div class="input-group">
+                                <label>Nama Penerima</label>
+                                <input type="text" id="checkout-nama" placeholder="Masukkan nama lengkap" value="Bapak Supardi">
+                            </div>
+                            <div class="input-group">
+                                <label>Nomor Telepon</label>
+                                <input type="tel" id="checkout-hp" placeholder="Contoh: 0812..." value="081234567890">
+                            </div>
+                            <div class="input-group mt-3">
+                                <label>Pilih Ekspedisi Pengiriman</label>
+                                <select id="pilihan-ekspedisi" style="width: 100%; padding: 12px; border: 1px solid #d1d5db; border-radius: 8px; font-family: inherit; font-size: 14px; background-color: #f9fafb; outline: none; cursor: pointer;">
+                                    <option value="15000">J&T Express - Rp 15.000</option>
+                                    <option value="18000">JNE Reguler - Rp 18.000</option>
+                                    <option value="14000">SiCepat REG - Rp 14.000</option>
+                                    <option value="0">Ambil Sendiri di Toko - Gratis</option>
+                                </select>
+                            </div>
+                            <div class="input-row">
+                                <div class="input-group">
+                                    <label>Provinsi</label>
+                                    <select>
+                                        <option value="">Pilih Provinsi...</option>
+                                        <option value="aceh" selected>Aceh</option>
+                                        <option value="sumut">Sumatera Utara</option>
+                                        <option value="sumbar">Sumatera Barat</option>
+                                        <option value="riau">Riau</option>
+                                        <option value="jabar">Jawa Barat</option>
+                                        <option value="jateng">Jawa Tengah</option>
+                                        <option value="jatim">Jawa Timur</option>
+                                    </select>
+                                </div>
+                                <div class="input-group">
+                                    <label>Kabupaten / Kota</label>
+                                    <input type="text" placeholder="Contoh: Kota..." value="Kota Lhokseumawe">
+                                </div>
+                            </div>
+                            <div class="input-group">
+                                <label>Detail Alamat (Jalan, RT/RW)</label>
+                                <textarea rows="2" placeholder="Nama jalan, RT/RW, nomor rumah, atau patokan..."></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="checkout-section mt-4">
+                        <h4><i class="fa-solid fa-wallet text-green-700"></i> Metode Pembayaran</h4>
+                        <div class="payment-methods mt-2">
+                            <label class="payment-option">
+                                <input type="radio" name="payment" value="cod" checked>
+                                <div class="payment-info">
+                                    <span class="font-bold">Bayar di Tempat (COD)</span>
+                                    <span class="text-xs text-gray">Bayar tunai saat pesanan tiba</span>
+                                </div>
+                            </label>
+                            <label class="payment-option">
+                                <input type="radio" name="payment" value="transfer">
+                                <div class="payment-info">
+                                    <span class="font-bold">Transfer Bank</span>
+                                    <span class="text-xs text-gray">BCA, Mandiri, BRI, BNI</span>
+                                </div>
+                            </label>
+                            <label class="payment-option">
+                                <input type="radio" name="payment" value="ewallet">
+                                <div class="payment-info">
+                                    <span class="font-bold">E-Wallet</span>
+                                    <span class="text-xs text-gray">Gopay, OVO, Dana, ShopeePay</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="checkout-section mt-4 mb-4">
+                        <h4><i class="fa-solid fa-receipt text-blue"></i> Ringkasan Belanja</h4>
+                        <div class="ringkasan-card mt-2">
+                            <div class="flex-between mb-2">
+                                <span class="text-sm text-gray">Total Harga Produk</span>
+                                <span class="text-sm font-bold" id="checkout-subtotal">Rp 0</span>
+                            </div>
+                            <div class="flex-between mb-2">
+                                <span class="text-sm text-gray">Ongkos Kirim</span>
+                                <span class="text-sm font-bold" id="checkout-ongkir">Rp 0</span> </div>
+                            <div class="flex-between border-top pt-3 mt-3">
+                                <span class="font-bold">Total Tagihan</span>
+                                <span class="harga-aktif text-xl" id="checkout-total">Rp 0</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <div class="modal-footer mt-auto pt-3 border-top">
+                    <button id="btn-bayar-sekarang" class="btn-primary" style="padding: 16px; font-size: 16px;">Buat Pesanan</button>
+                </div>
+            </div>
+        </div>
+
+<div id="modal-edit-profil" class="modal-overlay">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Edit Profil</h3>
+                    <button id="btn-close-profil"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                <div class="profil-body mt-3 mb-4">
+                    <div class="edit-avatar-wrapper text-center mb-4">
+                        <div class="avatar-large bg-gray-200 mx-auto">👨🏽‍🌾</div>
+                        <button class="btn-ganti-foto mt-2"><i class="fa-solid fa-camera"></i> Ubah Foto</button>
+                    </div>
+                    
+                    <div class="alamat-form"> 
+                        <div class="input-group">
+                            <label>Nama Lengkap</label>
+                            <input type="text" id="input-edit-nama" value="Ibu Hastuti Handayani">
+                        </div>
+                        <div class="input-group">
+                            <label>Nomor Handphone</label>
+                            <input type="tel" id="input-edit-hp" value="+62 812-3456-7890">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer border-top pt-3">
+                    <button id="btn-simpan-profil" class="btn-primary" style="padding: 16px; font-size: 16px;">Simpan Perubahan</button>
+                </div>
+            </div>
+        </div>
+
+<div id="modal-topup" class="modal-overlay">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Isi Saldo Dompet</h3>
+                    <button id="btn-close-topup"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                <div class="modal-body mt-3 mb-4">
+                    <div class="alamat-form">
+                        <div class="input-group">
+                            <label>Pilih Nominal Isi Saldo</label>
+                            <select id="select-nominal">
+                                <option value="20000">Rp 20.000</option>
+                                <option value="50000">Rp 50.000</option>
+                                <option value="100000" selected>Rp 100.000</option>
+                                <option value="200000">Rp 200.000</option>
+                                <option value="500000">Rp 500.000</option>
+                            </select>
+                        </div>
+                        <div class="input-group mt-2">
+                            <label>Metode Pembayaran</label>
+                            <select>
+                                <option value="bri">Transfer BRI Virtual Account</option>
+                                <option value="bca">Transfer BCA Virtual Account</option>
+                                <option value="dana">DANA</option>
+                                <option value="gopay">Gopay</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer border-top pt-3">
+                    <button id="btn-selesai-topup" class="btn-primary" style="padding: 16px; font-size: 16px;">Selesai & Bayar</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal-poin" class="modal-overlay">
+            <div class="modal-content" style="max-height: 80vh;">
+                <div class="modal-header">
+                    <h3>Misi Poin Sobat Jagung</h3>
+                    <button id="btn-close-poin"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                <div class="modal-body mt-3 mb-4" style="overflow-y: auto; flex-grow: 1;">
+                    <p class="text-sm text-gray mb-3">Selesaikan misi harian di bawah ini untuk mendapatkan Poin Sobat Jagung tambahan!</p>
+                    <div class="quest-list" style="display: flex; flex-direction: column; gap: 12px;">
+                        
+                        <div class="quest-item" style="border: 1px solid #e5e7eb; padding: 14px; border-radius: 12px; display: flex; justify-content: space-between; align-items: center; background-color: #fafafa;">
+                            <div>
+                                <h4 style="font-size: 14px; color: #111827;">Membaca Artikel Edukasi</h4>
+                                <p style="font-size: 11px; color: #22c55e; font-weight: bold; margin-top: 2px;">+50 Poin Sobat Jagung</p>
+                            </div>
+                            <button class="btn-claim-poin btn-primary" data-poin="50" style="width: auto; padding: 6px 16px; font-size: 12px; border-radius: 8px;">Klaim</button>
+                        </div>
+
+                        <div class="quest-item" style="border: 1px solid #e5e7eb; padding: 14px; border-radius: 12px; display: flex; justify-content: space-between; align-items: center; background-color: #fafafa;">
+                            <div>
+                                <h4 style="font-size: 14px; color: #111827;">Belanja 2 Produk</h4>
+                                <p style="font-size: 11px; color: #22c55e; font-weight: bold; margin-top: 2px;">+90 Poin Sobat Jagung</p>
+                            </div>
+                            <button class="btn-claim-poin btn-primary" data-poin="50" style="width: auto; padding: 6px 16px; font-size: 12px; border-radius: 8px;">Klaim</button>
+                        </div>
+
+                        <div class="quest-item" style="border: 1px solid #e5e7eb; padding: 14px; border-radius: 12px; display: flex; justify-content: space-between; align-items: center; background-color: #fafafa;">
+                            <div>
+                                <h4 style="font-size: 14px; color: #111827;">Buka Aplikasi Selama 5 menit</h4>
+                                <p style="font-size: 11px; color: #22c55e; font-weight: bold; margin-top: 2px;">+30 Poin Sobat Jagung</p>
+                            </div>
+                            <button class="btn-claim-poin btn-primary" data-poin="50" style="width: auto; padding: 6px 16px; font-size: 12px; border-radius: 8px;">Klaim</button>
+                        </div>
+
+                        <div class="quest-item" style="border: 1px solid #e5e7eb; padding: 14px; border-radius: 12px; display: flex; justify-content: space-between; align-items: center; background-color: #fafafa;">
+                            <div>
+                                <h4 style="font-size: 14px; color: #111827;">Melakukan Tanya Jawab dengan Konsultan</h4>
+                                <p style="font-size: 11px; color: #22c55e; font-weight: bold; margin-top: 2px;">+100 Poin Sobat Jagung</p>
+                            </div>
+                            <button class="btn-claim-poin btn-primary" data-poin="100" style="width: auto; padding: 6px 16px; font-size: 12px; border-radius: 8px;">Klaim</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal-kupon" class="modal-overlay">
+            <div class="modal-content" style="max-height: 80vh;">
+                <div class="modal-header">
+                    <h3>Kupon Belanja Belum Diklaim</h3>
+                    <button id="btn-close-kupon"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                <div class="modal-body mt-3 mb-4" style="overflow-y: auto; flex-grow: 1;">
+                    <div class="quest-list" style="display: flex; flex-direction: column; gap: 12px;">
+                        
+                        <div class="quest-item" style="border: 1px solid #ef4444; padding: 14px; border-radius: 12px; display: flex; justify-content: space-between; align-items: center; background-color: #fff5f5;">
+                            <div>
+                                <h4 style="font-size: 14px; color: #111827; font-weight: bold;">Potongan Ongkir Rp10.000</h4>
+                                <p style="font-size: 11px; color: #6b7280; margin-top: 2px;">Minimal belanja Rp 50.000</p>
+                            </div>
+                            <button class="btn-claim-kupon btn-primary bg-red" style="width: auto; padding: 6px 16px; font-size: 12px; border-radius: 8px; border: none;">Ambil</button>
+                        </div>
+
+                        <div class="quest-item" style="border: 1px solid #ef4444; padding: 14px; border-radius: 12px; display: flex; justify-content: space-between; align-items: center; background-color: #fff5f5;">
+                            <div>
+                                <h4 style="font-size: 14px; color: #111827; font-weight: bold;">Potongan Harga Rp8.000</h4>
+                                <p style="font-size: 11px; color: #6b7280; margin-top: 2px;">Minimal belanja Rp 100.000</p>
+                            </div>
+                            <button class="btn-claim-kupon btn-primary bg-red" style="width: auto; padding: 6px 16px; font-size: 12px; border-radius: 8px; border: none;">Ambil</button>
+                        </div>
+
+                        <div class="quest-item" style="border: 1px solid #ef4444; padding: 14px; border-radius: 12px; display: flex; justify-content: space-between; align-items: center; background-color: #fff5f5;">
+                            <div>
+                                <h4 style="font-size: 14px; color: #111827; font-weight: bold;">diskon 10%</h4>
+                                <p style="font-size: 11px; color: #6b7280; margin-top: 2px;">Minimal belanja 2 Produk</p>
+                            </div>
+                            <button class="btn-claim-kupon btn-primary bg-red" style="width: auto; padding: 6px 16px; font-size: 12px; border-radius: 8px; border: none;">Ambil</button>
+                        </div>
+
+                        <div class="quest-item" style="border: 1px solid #ef4444; padding: 14px; border-radius: 12px; display: flex; justify-content: space-between; align-items: center; background-color: #fff5f5;">
+                            <div>
+                                <h4 style="font-size: 14px; color: #111827; font-weight: bold;">Diskon Pupuk Subsidi 5%</h4>
+                                <p style="font-size: 11px; color: #6b7280; margin-top: 2px;">Khusus produk berlabel subsidi</p>
+                            </div>
+                            <button class="btn-claim-kupon btn-primary bg-red" style="width: auto; padding: 6px 16px; font-size: 12px; border-radius: 8px; border: none;">Ambil</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<div id="modal-pesanan" class="modal-overlay">
+            <div class="modal-content" style="height: 90vh;">
+                <div class="modal-header">
+                    <h3>Pesanan Saya</h3>
+                    <button class="btn-tutup-aktivitas"><i class="fa-solid fa-arrow-left"></i></button>
+                </div>
+                <div class="tabs-scroll mt-2 mb-3">
+                    <button class="tab-btn active" data-tab="pesanan-dikemas">Dikemas</button>
+                    <button class="tab-btn" data-tab="pesanan-bayar">Belum Bayar</button>
+                    <button class="tab-btn" data-tab="pesanan-dikirim">Dikirim</button>
+                    <button class="tab-btn" data-tab="pesanan-nilai">Penilaian</button>
+                    <button class="tab-btn" data-tab="pesanan-retur">Pengembalian</button>
+                </div>
+                <div class="modal-body" style="overflow-y: auto; flex-grow: 1;">
+                    <div id="pesanan-dikemas" class="tab-content active">
+                        <div id="wadah-pesanan-baru">
+                            <p class="text-center text-gray text-sm mt-4">Belum ada pesanan yang sedang dikemas.</p>
+                        </div>
+                    </div>
+                    <div id="pesanan-bayar" class="tab-content"><p class="text-center text-gray text-sm mt-4">Tidak ada tagihan tertunda.</p></div>
+                    <div id="pesanan-dikirim" class="tab-content"><p class="text-center text-gray text-sm mt-4">Tidak ada pesanan dalam perjalanan.</p></div>
+                    <div id="pesanan-nilai" class="tab-content"><p class="text-center text-gray text-sm mt-4">Tidak ada pesanan yang menunggu ulasan.</p></div>
+                    <div id="pesanan-retur" class="tab-content"><p class="text-center text-gray text-sm mt-4">Tidak ada pengajuan pengembalian.</p></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal-riwayat" class="modal-overlay">
+            <div class="modal-content" style="height: 80vh;">
+                <div class="modal-header">
+                    <h3>Riwayat Konsultasi</h3>
+                    <button class="btn-tutup-aktivitas"><i class="fa-solid fa-arrow-left"></i></button>
+                </div>
+                <div class="modal-body mt-3" style="overflow-y: auto;">
+                    <div class="riwayat-card">
+                        <div class="flex-between mb-2">
+                            <span class="badge bg-green">Selesai</span>
+                            <span class="text-xs text-gray">12 Mei 2026, 14:30</span>
+                        </div>
+                        <h4 class="font-bold text-sm">Konsultasi dengan Dimas Fahri</h4>
+                        <p class="text-xs text-gray mt-1"><strong>Hasil:</strong> Menggunakan fungisida berbahan aktif Difenokonazol untuk mengatasi hawar daun jagung. Penyemprotan rutin 5 hari sekali.</p>
+                        <button class="btn-primary btn-outline mt-3" style="padding: 8px; font-size: 12px;">Konsultasi Ulang</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal-lahan" class="modal-overlay">
+            <div class="modal-content" style="height: 85vh;">
+                <div class="modal-header">
+                    <h3>Aset Lahan & Usaha</h3>
+                    <button class="btn-tutup-aktivitas"><i class="fa-solid fa-arrow-left"></i></button>
+                </div>
+                <div class="modal-body mt-3" style="overflow-y: auto;">
+                    <div class="lahan-card">
+                        <div class="flex-between mb-2">
+                            <div class="flex-align" style="display: flex; gap: 8px; align-items: center;">
+                                <div class="icon-wrapper bg-yellow" style="width: 32px; height: 32px; margin: 0; font-size: 14px;">🌽</div>
+                                <h4 class="font-bold text-sm">Sawah Blok A - Jagung</h4>
+                            </div>
+                            <span class="text-xs font-bold text-green-700">Sehat</span>
+                        </div>
+                        <p class="text-xs text-gray mt-1">Fase Vegetatif (Usia Tanam: 35 Hari)</p>
+                        <div class="progress-bar mt-2"><div style="width: 45%; background-color: #22c55e;"></div></div>
+                        <p class="text-xs text-right mt-1 text-gray">Est. Panen: 15 Jul 2026</p>
+                    </div>
+                    
+                    <div class="lahan-card mt-3">
+                        <div class="flex-between mb-2">
+                            <div class="flex-align" style="display: flex; gap: 8px; align-items: center;">
+                                <div class="icon-wrapper bg-red" style="width: 32px; height: 32px; margin: 0; font-size: 14px;">🐔</div>
+                                <h4 class="font-bold text-sm">Peternakan Terpadu (Ayam & Lele)</h4>
+                            </div>
+                            <span class="text-xs font-bold text-green-700">Optimal</span>
+                        </div>
+                        <p class="text-xs text-gray mt-1">Populasi: 500 Ayam Pedaging, 2000 Lele</p>
+                        <p class="text-xs text-gray mt-1">Fase: Pembesaran Siap Panen</p>
+                        <div class="progress-bar mt-2"><div style="width: 85%; background-color: #f59e0b;"></div></div>
+                        <p class="text-xs text-right mt-1 text-gray">Mendukung Rantai Pasok Usaha Kuliner</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal-favorit" class="modal-overlay">
+            <div class="modal-content" style="height: 90vh;">
+                <div class="modal-header">
+                    <h3>Favorit Saya</h3>
+                    <button class="btn-tutup-aktivitas"><i class="fa-solid fa-arrow-left"></i></button>
+                </div>
+                <div class="tabs-scroll mt-2 mb-3">
+                    <button class="tab-btn active" data-tab="fav-produk">Produk</button>
+                    <button class="tab-btn" data-tab="fav-toko">Toko Partner</button>
+                </div>
+                <div class="modal-body" style="overflow-y: auto; flex-grow: 1;">
+                    <div id="fav-produk" class="tab-content active">
+                        <div class="produk-grid" id="wadah-fav-produk">
+                            <p class="text-center text-gray text-sm mt-4 w-100" style="grid-column: span 2;">Belum ada produk favorit.</p>
+                        </div>
+                    </div>
+                    <div id="fav-toko" class="tab-content">
+                        <div class="toko-list" id="wadah-fav-toko">
+                            <p class="text-center text-gray text-sm mt-4">Belum ada toko favorit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<div id="modal-pengaturan" class="modal-overlay">
+            <div class="modal-content">
+                <div class="modal-header"><h3>Pengaturan Akun</h3><button class="btn-tutup-aktivitas"><i class="fa-solid fa-xmark"></i></button></div>
+                <div class="modal-body mt-3">
+                    <div class="akun-menu-list" style="padding: 0;">
+                        <div class="akun-menu-item"><div class="menu-icon bg-blue"><i class="fa-solid fa-lock text-white"></i></div><div class="menu-text">Ubah Kata Sandi</div><i class="fa-solid fa-chevron-right text-gray"></i></div>
+                        <div class="akun-menu-item"><div class="menu-icon bg-yellow"><i class="fa-solid fa-bell text-white"></i></div><div class="menu-text">Notifikasi</div><div class="toggle-switch"></div></div>
+                        <div class="akun-menu-item"><div class="menu-icon bg-red"><i class="fa-solid fa-trash text-white"></i></div><div class="menu-text">Hapus Akun</div><i class="fa-solid fa-chevron-right text-gray"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal-bantuan" class="modal-overlay">
+            <div class="modal-content" style="height: 80vh;">
+                <div class="modal-header"><h3>Pusat Bantuan</h3><button class="btn-tutup-aktivitas"><i class="fa-solid fa-xmark"></i></button></div>
+                <div class="modal-body mt-3" style="overflow-y: auto;">
+                    <p class="text-sm text-gray mb-4">Ada kendala? Kami siap membantu Anda 24/7.</p>
+                    <div class="riwayat-card">
+                        <h4 class="font-bold text-sm">FAQ (Pertanyaan Umum)</h4>
+                        <p class="text-xs text-gray mt-2">• Bagaimana cara melacak pesanan?<br>• Mengapa saldo belum masuk?<br>• Cara klaim garansi produk?</p>
+                    </div>
+                    <a href="https://wa.me/6283116174546" target="_blank"><button class="btn-primary mt-3"><i class="fa-brands fa-whatsapp"></i> Chat Admin via WhatsApp</button></a>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal-sk" class="modal-overlay">
+            <div class="modal-content" style="height: 80vh;">
+                <div class="modal-header"><h3>Syarat & Ketentuan</h3><button class="btn-tutup-aktivitas"><i class="fa-solid fa-xmark"></i></button></div>
+                <div class="modal-body mt-3" style="overflow-y: auto; font-size: 13px; color: #4b5563; line-height: 1.6;">
+                    <p class="mb-2"><strong>1. Ketentuan Penggunaan</strong><br>Dengan menggunakan aplikasi Sobat Jagung, Anda setuju untuk mematuhi aturan yang berlaku.</p>
+                    <p class="mb-2"><strong>2. Kebijakan Privasi</strong><br>Data pribadi Anda (Nama, No. HP, Alamat) dijamin aman dan hanya digunakan untuk kebutuhan pengiriman & konsultasi.</p>
+                    <p><strong>3. Pembatalan & Retur</strong><br>Pesanan dapat dibatalkan jika belum dikemas. Retur diterima maksimal 2 hari setelah barang diterima dengan bukti video unboxing.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal-ubah-sandi" class="modal-overlay" style="z-index: 1100;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Ubah Kata Sandi</h3>
+                    <button id="btn-close-sandi"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                <div class="modal-body mt-3 mb-4">
+                    <div class="alamat-form">
+                        <div class="input-group">
+                            <label>Kata Sandi Lama</label>
+                            <input type="password" id="sandi-lama" placeholder="Masukkan kata sandi lama">
+                        </div>
+                        <div class="input-group mt-2">
+                            <label>Kata Sandi Baru</label>
+                            <input type="password" id="sandi-baru" placeholder="Masukkan kata sandi baru yang kuat">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer border-top pt-3">
+                    <button id="btn-simpan-sandi" class="btn-primary" style="padding: 16px; font-size: 16px;">Perbarui Sandi</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal-hapus-akun" class="modal-overlay" style="z-index: 1100;">
+            <div class="modal-content modal-center">
+                <div class="logout-icon"><i class="fa-solid fa-trash-can text-red"></i></div>
+                <h3>Hapus Akun Anda?</h3>
+                <p>Tindakan ini bersifat permanen. Seluruh data lahan, saldo dompet, kupon, dan poin yang dikumpulkan akan hangus sepenuhnya.</p>
+                <div class="modal-actions">
+                    <button id="btn-batal-hapus" class="btn-primary btn-outline">Batal</button>
+                    <button id="btn-konfirm-hapus" class="btn-primary btn-danger">Hapus Permanen</button>
+                </div>
+            </div>
+        </div>
+
+        
+        
+        <div id="toast-container">Pesan Notifikasi</div>
+
+    </div>
+    <script src="script.js"></script>
+
+    <div id="modal-ulasan" class="modal-overlay" style="z-index: 9999;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Nilai Layanan Kami</h3>
+                    <button id="btn-tutup-ulasan" class="btn-tutup-aktivitas"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                <div class="modal-body mt-3 text-center">
+                    <p class="text-sm text-gray mb-3">Seberapa puas Anda dengan ahli kami?</p>
+                    
+                    <div class="input-bintang mb-4" id="interaktif-bintang">
+                        <i class="fa-solid fa-star" data-nilai="1"></i>
+                        <i class="fa-solid fa-star" data-nilai="2"></i>
+                        <i class="fa-solid fa-star" data-nilai="3"></i>
+                        <i class="fa-solid fa-star" data-nilai="4"></i>
+                        <i class="fa-solid fa-star" data-nilai="5"></i>
+                    </div>
+
+                    <div class="alamat-form text-left">
+                        <div class="input-group">
+                            <label>Ceritakan Pengalaman Anda (Opsional)</label>
+                            <textarea id="teks-ulasan-baru" rows="3" placeholder="Sangat membantu..."></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer border-top pt-3 mt-3">
+                    <button id="btn-kirim-ulasan" class="btn-primary w-100" style="padding: 14px; font-size: 15px;">Kirim Penilaian</button>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
